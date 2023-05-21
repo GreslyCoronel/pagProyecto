@@ -2,8 +2,15 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        titulos: ['Passion One','cursive'],
+      }
+    },
   },
   plugins: [],
 }
+
+
+
 
