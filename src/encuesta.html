@@ -44,96 +44,79 @@
  </header>
 <body >
  
-  <!-- slider -->
-
-  <div class="container mx-auto h-96 bg-emerald-400  ">
-    <div class="slider-frame ">
-      <ul>
-          <li><img src="/img/slider1.png" alt=""></li>
-          <li><img src="/img/slider2.jpeg" alt=""></li>
-          <li><img src="/img/slider3.jpeg" alt=""></li>
-          <li><img src="/img/slider4.jpeg" alt=""></li>
-      </ul>
-  </div>
-  </div>
-
-    <!-- Botones -->
-
-  <div class="container   bg-[url('https://png.pngtree.com/thumb_back/fw800/back_our/20190614/ourmid/pngtree-green-life-creative-brick-wall-environmental-public-welfare-poster-background-material-image_122412.jpg')] mx-auto h-44 bg-purple-400 bg-cover py-2 m-7" >   
-    <div class="flex items-center justify-between flex-wrap ">
-       <button type="button" class="text-black bg-black rounded-full text-center h-36 my-4 mx-8 ">
-       <a href="">
-        <img class="h-36 rounded-full " src="/img/Conoce mas.png" alt="">
-       </a>
-       </button>
-      <button type="button" class="text-black bg-black rounded-full text-center h-36 my-4">
-      <a href="PuntosRecoleccion.html">
-        <img class="h-36 rounded-full " src="/img/Puntos de recolección.png" alt="">
-      </a>
-      </button>
-     <button type="button" class="text-black bg-white rounded-full text-center h-36 my-4 ">
-        <a href="encuesta.html">
-          <img class="h-36 rounded-full " src="/img/Realiza tu encuesta.png" alt="">
-        </a>
-      </button>
-     
-      <button type="button" class="text-black bg-white rounded-full text-center h-36 my-4 mx-8">
-         <a href="">
-          <img class="h-36 rounded-full " src="/img/Preguntas frecuentes.png" alt="">
-         </a>
-       </button>  
-    </div>
-  </div>
-
-  <!-- Tarjetas de información  -->
-
-  <div class=" container flex justify-between items-stretch  px-10 py-3  ">
-    <p class="text-blue-50">Aprende con nosotros</p>
-      
-      <div class="m-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <img class="rounded-t-lg" src="https://ganar-ganar.mx/wp-content/uploads/2022/09/contaminación-pilas.jpg" alt="" />
-        <div class="p-5">
-             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Resolución 1297 del año 2010</h5>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Se crea la resolución 1297 del año 2010 por parte del ministerio de medio ambiente y desarrollo sostenible en donde se les atribuye la responsabilidad a las empresas importadoras, comercializadores y demás relacionadas con el producto, hacerse cargo de la vida útil de cada una (Ministerio de Ambiente vivienda y desarrollo territorial, 2010).
-          </p>
-           <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-               Leer más
-          <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-           </a>
+  <div class="container mx-auto  justify-center bg-lime-200">
+    <div class="container mx-auto  w-1/2">
+      <h1 class="text-2xl text-center py-3 font-bold mb-4">Realiza tu encuesta</h1>
+      <form>
+        <div class="mb-4">
+          <label for="cantidad-pilas" class="block mb-2">1. ¿Cuántas pilas utilizas en tu hogar en promedio por mes?</label>
+          <select id="cantidad-pilas" name="cantidad-pilas" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" required>
+            <option value="">Selecciona una opción</option>
+            <option value="menos-de-5">Menos de 5</option>
+            <option value="entre-5-y-10">Entre 5 y 10</option>
+            <option value="entre-10-y-20">Entre 10 y 20</option>
+            <option value="mas-de-20">Más de 20</option>
+          </select>
         </div>
+        <div class="mb-4">
+          <label for="cantidad-pilas" class="block mb-2">2. ¿Qué haces con las pilas usadas una vez que se agotan?</label>
+          <select id="cantidad-pilas" name="cantidad-pilas" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" required>
+            <option value="">Selecciona una opción</option>
+            <option value="menos-de-5">Las arrojo a la basura común.</option>
+            <option value="entre-5-y-10">Las guardo en casa sin saber qué hacer con ellas.</option>
+            <option value="entre-10-y-20">Las llevo a puntos de recogida específicos para su reciclaje.</option>
+            <option value="mas-de-20">No sabe no responde</option>
+          </select>
+        </div>
+        <div class="mb-4">
+          <label for="cantidad-pilas" class="block mb-2">3. ¿Sabes si existen lugares cercanos a tu residencia donde puedas llevar las pilas usadas para su reciclaje?</label>
+          <select id="cantidad-pilas" name="cantidad-pilas" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" required>
+            <option value="">Selecciona una opción</option>
+            <option value="menos-de-5">Sí, conozco varios lugares cercanos.</option>
+            <option value="entre-5-y-10">Sí, pero no estoy seguro/a de su ubicación exacta.</option>
+            <option value="entre-10-y-20">No, no tengo conocimiento de lugares específicos.</option>
+            <option value="mas-de-20">No estoy seguro/a.</option>
+          </select>
+        </div>
+        <div class="mb-4 ">
+          <label for="cantidad-pilas" class="block mb-2">4. ¿Crees que es importante reciclar las pilas usadas?</label>
+          <select id="cantidad-pilas" name="cantidad-pilas" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" required>
+            <option value="">Selecciona una opción</option>
+            <option value="menos-de-5">Sí, es muy importante para proteger el medio ambiente.</option>
+            <option value="entre-5-y-10">No estoy seguro/a de su importancia.</option>
+            <option value="entre-10-y-20">No, no considero que sea relevante.</option>
+            <option value="mas-de-20">No sabe no responde.</option>
+          </select>
+        </div>
+        <div class="mb-4 ">
+          <label for="cantidad-pilas" class="block mb-2">5. ¿Qué medidas crees que podrían fomentar el reciclaje de pilas?</label>
+          <select id="cantidad-pilas" name="cantidad-pilas" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" required>
+            <option value="">Selecciona una opción</option>
+            <option value="menos-de-5">Campañas educativas y de concienciación.</option>
+            <option value="entre-5-y-10">Mayor presencia de contenedores de reciclaje de pilas.</option>
+            <option value="entre-10-y-20">Incentivos o recompensas para aquellos que reciclan pilas.</option>
+          </select>
+        </div>
+        <div class="mb-4 ">
+          <label for="cantidad-pilas" class="block mb-2">6. ¿Utilizas pilas recargables en lugar de pilas desechables?</label>
+          <select id="cantidad-pilas" name="cantidad-pilas" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" required>
+            <option value="">Selecciona una opción</option>
+            <option value="menos-de-5">Sí, utilizo principalmente pilas recargables.</option>
+            <option value="entre-5-y-10">No, utilizo principalmente pilas desechables.</option>
+            <option value="entre-10-y-20">Utilizo una combinación de ambas.</option>
+          </select>
+        </div>
+        <button id="button" type="submit" class="w-36 px-6 py-3 m-6 mt-3 text-lg text-white transition-all duration-150 ease-linear rounded-lg shadow outline-none bg-green-800 hover:bg-green-600 hover:shadow-lg focus:outline-none">
+          Enviar
+        </button>
+          
       </div>
-
-      <div class=" m-4  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <img class="rounded-t-lg" src="https://republicanaradio.com/wp-content/uploads/2021/04/pilas-reciclar-en-casa-urepublicanaradio-bogota.jpg" alt="" />
-    <div class="p-5">
-         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Consumo de pilas en Colombia</h5>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">En Colombia se consumen 200 millones de pilas, Se estima que de esa cantidad unos 134 millones de unidades (el 67 %) no se reciclan, según un estudio realizado por el Centro Nacional de Consultoría y la Andi, generando 11 mil toneladas de residuos.
-      </p>
-       <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-           Leer más
-      <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-       </a>
-    </div>
   </div>
-
-  <div class=" m-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <img class="rounded-t-lg" src="https://www.deskidea.com/blog/wp-content/uploads/2020/07/piensa-en-verde.jpg" alt="" />
-      <div class="p-5">
-         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">¿Por qué es importante reciclar las pilas?</h5>
-         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Las pilas son la fracción más contaminante de nuestros desechos domésticos. Su reciclaje permite evitar que una serie de sustancias peligrosas pasen al medio ambiente, como el mercurio, cadmio, zinc, plomo.
-         La reutilización de estas materias primas, conllevan a una importante disminución del impacto ambiental. </p>
-        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Leer más
-          <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-        </a>
-    </div>
-  </div>
-</div>
 
   
 <!-- Footer  -->
-<footer class="bg-green-950 text-center text-white ">
-  <div class="container px-6 pt-6">
+<footer class="bg-green-950 container mx-auto text-center text-white ">
+  <div class="container  px-6 pt-6">
     <!-- Social media icons container -->
     <div class="mb-6 flex justify-center">
       <a

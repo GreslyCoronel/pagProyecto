@@ -9,7 +9,8 @@ boton.addEventListener("click", () =>{
 
 //-------------------------------------------------
 
-// slider
+// login
+
 
 
 
