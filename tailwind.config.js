@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       fontFamily: {
         titulos: ['Passion One','cursive'],
+      },
+      altura: {
+        h: 100,
       }
     },
   },

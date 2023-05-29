@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="./estilo.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="js.js">
 </head>
 
@@ -44,96 +46,114 @@
  </header>
 <body >
  
-  <div class="container mx-auto  justify-center bg-gradient-to-r from-green-400 to-lime-200">
-    <div class="container mx-auto  w-1/2">
-      <h1 class="text-2xl text-center py-3 font-bold mb-4">Realiza tu encuesta</h1>
-      <form>
-        <div class="mb-4">
-          <label for="cantidad-pilas" class="block mb-2">1. ¿Cuántas pilas utilizas en tu hogar en promedio por mes?</label>
-          <select id="cantidad-pilas" name="cantidad-pilas" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" required>
-            <option value="">Selecciona una opción</option>
-            <option value="menos-de-5">Menos de 5</option>
-            <option value="entre-5-y-10">Entre 5 y 10</option>
-            <option value="entre-10-y-20">Entre 10 y 20</option>
-            <option value="mas-de-20">Más de 20</option>
-          </select>
+    
+    <header>
+        <h1 class=""> Calcula el peso de las pilas</h1>
+    </header>
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Pila AAA</span>
+                <img src="https://vinibattery.com/wp-content/uploads/2018/06/DUR07716_02.jpg" alt="" class="img-item">
+                <span class="precio-item">11.5 gramos</span>
+                <button class="boton-item  ">Agregar</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Pila AA</span>
+                <img src="https://vinibattery.com/wp-content/uploads/2018/06/BDWPSTORECATALOG62f77926-9c7b-4f00-bc45-75a0cc55aa9020180615104902.jpg" alt="" class="img-item">
+                <span class="precio-item">22.5 gramos</span>
+                <button class="boton-item ">Agregar</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Pila C</span>
+                <img src="https://www.duracell-la.com/upload/sites/37/2016/07/Web-PI-Alkaline_Packshots_MXPC_CB_C2BL_041333000992_5009964_FOP.png" alt="" class="img-item">
+                <span class="precio-item">72.0 gramos</span>
+                <button class="boton-item">Agregar</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Pila D</span>
+                <img src="https://vinibattery.com/wp-content/uploads/2018/06/BDWPSTORECATALOG6f279230-bd54-4f65-8409-6b6e46d35f6b20180312160439.jpg" alt="" class="img-item">
+                <span class="precio-item">140.0 gramos</span>
+                <button class="boton-item">Agregar</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Pila de botón</span>
+                <img src="https://www.ferreteriacampollano.com/64691-thickbox_default/pila-boton-cr2032-litio-3v-unidad-maxell.jpg" alt="" class="img-item">
+                <span class="precio-item">1.9 gramos</span>
+                <button class="boton-item">Agregar</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Pila cuadrada de 9v</span>
+                <img src="https://www.electronicoscaldas.com/2573-thickbox_default/bateria-cuadrada-de-9v-alcalina.jpg" alt="" class="img-item">
+                <span class="precio-item">45.6 gramos</span>
+                <button class="boton-item">Agregar</button>
+            </div>
         </div>
-        <div class="mb-4">
-          <label for="cantidad-pilas" class="block mb-2">2. ¿Qué haces con las pilas usadas una vez que se agotan?</label>
-          <select id="cantidad-pilas" name="cantidad-pilas" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" required>
-            <option value="">Selecciona una opción</option>
-            <option value="menos-de-5">Las arrojo a la basura común.</option>
-            <option value="entre-5-y-10">Las guardo en casa sin saber qué hacer con ellas.</option>
-            <option value="entre-10-y-20">Las llevo a puntos de recogida específicos para su reciclaje.</option>
-            <option value="mas-de-20">No sabe no responde</option>
-          </select>
-        </div>
-        <div class="mb-4">
-          <label for="cantidad-pilas" class="block mb-2">3. ¿Sabes si existen lugares cercanos a tu residencia donde puedas llevar las pilas usadas para su reciclaje?</label>
-          <select id="cantidad-pilas" name="cantidad-pilas" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" required>
-            <option value="">Selecciona una opción</option>
-            <option value="menos-de-5">Sí, conozco varios lugares cercanos.</option>
-            <option value="entre-5-y-10">Sí, pero no estoy seguro/a de su ubicación exacta.</option>
-            <option value="entre-10-y-20">No, no tengo conocimiento de lugares específicos.</option>
-            <option value="mas-de-20">No estoy seguro/a.</option>
-          </select>
-        </div>
-        <div class="mb-4 ">
-          <label for="cantidad-pilas" class="block mb-2">4. ¿Crees que es importante reciclar las pilas usadas?</label>
-          <select id="cantidad-pilas" name="cantidad-pilas" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" required>
-            <option value="">Selecciona una opción</option>
-            <option value="menos-de-5">Sí, es muy importante para proteger el medio ambiente.</option>
-            <option value="entre-5-y-10">No estoy seguro/a de su importancia.</option>
-            <option value="entre-10-y-20">No, no considero que sea relevante.</option>
-            <option value="mas-de-20">No sabe no responde.</option>
-          </select>
-        </div>
-        <div class="mb-4 ">
-          <label for="cantidad-pilas" class="block mb-2">5. ¿Qué medidas crees que podrían fomentar el reciclaje de pilas?</label>
-          <select id="cantidad-pilas" name="cantidad-pilas" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" required>
-            <option value="">Selecciona una opción</option>
-            <option value="menos-de-5">Campañas educativas y de concienciación.</option>
-            <option value="entre-5-y-10">Mayor presencia de contenedores de reciclaje de pilas.</option>
-            <option value="entre-10-y-20">Incentivos o recompensas para aquellos que reciclan pilas.</option>
-          </select>
-        </div>
-        <div class="mb-4 ">
-          <label for="cantidad-pilas" class="block mb-2">6. ¿Utilizas pilas recargables en lugar de pilas desechables?</label>
-          <select id="cantidad-pilas" name="cantidad-pilas" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" required>
-            <option value="">Selecciona una opción</option>
-            <option value="menos-de-5">Sí, utilizo principalmente pilas recargables.</option>
-            <option value="entre-5-y-10">No, utilizo principalmente pilas desechables.</option>
-            <option value="entre-10-y-20">Utilizo una combinación de ambas.</option>
-          </select>
-        </div>
-        <button id="button" type="submit" class="w-36 px-6 py-3 m-6 mt-3 text-lg text-white transition-all duration-150 ease-linear rounded-lg shadow outline-none bg-green-800 hover:bg-green-600 hover:shadow-lg focus:outline-none">
-          Enviar
-        </button>
-          
-      </div>
-  </div>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>PilasVerdes</h2>
+            </div>
 
-  <div class=" container flex justify-between items-stretch  px-10 py-3  ">
-    <p class="text-blue-50">Aprende con nosotros</p>
-      
-      <div class="m-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <img class="rounded-t-lg" src="https://3.bp.blogspot.com/-X24aRlnk89Q/Vg6xCpICQEI/AAAAAAAAFAU/Pqm7ua8Cm5k/s1600/estadistica2.jpg" alt="" />
-      </div>
+            <div class="carrito-items">
+                <!-- 
+                <div class="carrito-item">
+                    <img src="img/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000,00</span>
+                    </div>
+                   <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000,00</span>
+                    </div>
+                   <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </button>
+                </div>
+                 -->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    
+                    <span class="carrito-precio-total">
+                        
+                    </span>
+                </div>
+                <button class="btn-pagar">Limpiar</button>
+            </div>
+        </div>
+    </section>
+    
+    
+   
 
-      <div class=" m-4  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <img class="rounded-t-lg" src="https://t1.uc.ltmcdn.com/es/posts/0/6/6/como_calcular_los_valores_en_los_graficos_circulares_1660_600.jpg" alt="" />
-      </div>
 
-  
-  </div>
-</div>
 
+   
 
 
   
 <!-- Footer  -->
-<footer class="bg-green-950 container mx-auto text-center text-white ">
-  <div class="container  px-6 pt-6">
+<footer class=" container mx-auto bg-green-950 text-center text-white ">
+  <div class="container px-6 pt-6">
     <!-- Social media icons container -->
     <div class="mb-6 flex justify-center">
       <a
